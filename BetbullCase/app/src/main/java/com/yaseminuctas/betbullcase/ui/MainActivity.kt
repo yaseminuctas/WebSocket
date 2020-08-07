@@ -1,4 +1,4 @@
-package com.yaseminuctas.betbullcase
+package com.yaseminuctas.betbullcase.ui
 
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
@@ -6,10 +6,10 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.yaseminuctas.betbullcase.R
 import com.yaseminuctas.betbullcase.data.network.Datum
 import com.yaseminuctas.betbullcase.data.repositories.MainViewModelFactory
 import com.yaseminuctas.betbullcase.databinding.ActivityMainBinding
-import com.yaseminuctas.betbullcase.ui.DatumAdapter
 import com.yaseminuctas.betbullcase.util.BaseActivity
 import com.yaseminuctas.betbullcase.util.Const
 import kotlinx.android.synthetic.main.activity_main.*

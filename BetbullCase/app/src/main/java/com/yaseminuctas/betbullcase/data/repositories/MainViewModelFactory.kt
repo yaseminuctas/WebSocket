@@ -1,9 +1,8 @@
 package com.yaseminuctas.betbullcase.data.repositories
 
-import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.yaseminuctas.betbullcase.MainViewModel
+import com.yaseminuctas.betbullcase.ui.MainViewModel
 
 @Suppress("UNCHECKED_CAST")
 class MainViewModelFactory() : ViewModelProvider.NewInstanceFactory(){

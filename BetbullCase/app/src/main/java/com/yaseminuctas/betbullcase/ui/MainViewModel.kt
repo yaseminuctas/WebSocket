@@ -1,4 +1,4 @@
-package com.yaseminuctas.betbullcase
+package com.yaseminuctas.betbullcase.ui
 
 import android.text.Editable
 import android.text.TextWatcher
@@ -6,6 +6,7 @@ import androidx.databinding.ObservableField
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.yaseminuctas.betbullcase.util.WebSocketInterface
 import com.yaseminuctas.betbullcase.data.model.MockData
 import com.yaseminuctas.betbullcase.data.network.ApiClient
 import com.yaseminuctas.betbullcase.data.network.Datum
@@ -39,7 +40,8 @@ class MainViewModel : ViewModel(), WebSocketInterface {
         get() = _newText
 
     val dataList = ArrayList<Datum>()
-    val socketListener: EchoWebSocketListener = EchoWebSocketListener(this)
+    val socketListener: EchoWebSocketListener =
+        EchoWebSocketListener(this)
     val client: OkHttpClient = OkHttpClient()
     var wsIsOpened: Boolean = false
     lateinit var webSocket: WebSocket

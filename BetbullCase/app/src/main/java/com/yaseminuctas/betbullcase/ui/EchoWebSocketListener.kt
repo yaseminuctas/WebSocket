@@ -1,5 +1,6 @@
-package com.yaseminuctas.betbullcase
+package com.yaseminuctas.betbullcase.ui
 
+import com.yaseminuctas.betbullcase.util.WebSocketInterface
 import okhttp3.Response
 import okhttp3.WebSocket
 import okio.ByteString

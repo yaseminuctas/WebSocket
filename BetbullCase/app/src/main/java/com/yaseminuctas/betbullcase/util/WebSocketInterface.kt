@@ -1,4 +1,4 @@
-package com.yaseminuctas.betbullcase
+package com.yaseminuctas.betbullcase.util
 
 import okhttp3.Response
 import okhttp3.WebSocket
